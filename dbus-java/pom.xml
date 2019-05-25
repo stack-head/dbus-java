@@ -72,7 +72,10 @@
 
                       <!--<Bundle-ClassPath>.,jnr-unixsocket-0.22.jar</Bundle-ClassPath>-->
                       
-                      <Import-Package>org.slf4j</Import-Package>
+                      <Import-Package>
+                      org.slf4j,
+                      org.eclipse.jdt.annotation;resolution:=optional
+                      </Import-Package>
                       <Export-Package>org.freedesktop.*</Export-Package>
                       <!--<Embed-Dependency>jnr-*,jffi-*;scope=compile|runtime</Embed-Dependency>-->
                       <Embed-Dependency>!junit-*,!slf4j*, !mockito*, !logback*, ;scope=compile|runtime</Embed-Dependency>
@@ -138,6 +141,13 @@
     </build>
 
     <dependencies>
+    
+        <dependency>
+            <groupId>org.eclipse.jdt</groupId>
+            <artifactId>org.eclipse.jdt.annotation</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+    
         <dependency>
             <groupId>com.github.hypfvieh</groupId>
             <artifactId>java-utils</artifactId>

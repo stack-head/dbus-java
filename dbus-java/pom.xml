@@ -78,7 +78,7 @@
                       </Import-Package>
                       <Export-Package>org.freedesktop.*</Export-Package>
                       <!--<Embed-Dependency>jnr-*,jffi-*;scope=compile|runtime</Embed-Dependency>-->
-                      <Embed-Dependency>!junit-*,!slf4j*, !mockito*, !logback*, ;scope=compile|runtime</Embed-Dependency>
+                      <Embed-Dependency>!junit-*,!slf4j*, !mockito*, !logback*, !apiguardian*, !opentest4j*, !objenesis, !org.eclipse.jdt.annotation*, ;scope=compile|runtime</Embed-Dependency>
                       <Embed-Transitive>true</Embed-Transitive>
                     </instructions>
                 </configuration>

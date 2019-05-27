@@ -15,7 +15,7 @@
     <parent>
         <groupId>com.github.hypfvieh</groupId>
         <artifactId>dbus-java-parent</artifactId>
-        <version>3.3.0-SNAPSHOT</version>
+        <version>3.0.2-bundled</version>
     </parent>
 
     <properties>
@@ -78,7 +78,7 @@
                       </Import-Package>
                       <Export-Package>org.freedesktop.*</Export-Package>
                       <!--<Embed-Dependency>jnr-*,jffi-*;scope=compile|runtime</Embed-Dependency>-->
-                      <Embed-Dependency>!junit-*,!slf4j*, !mockito*, !logback*, !apiguardian*, !opentest4j*, !objenesis, !org.eclipse.jdt.annotation*, ;scope=compile|runtime</Embed-Dependency>
+                      <Embed-Dependency>!junit-*,!slf4j*, !mockito*, !logback*, !apiguardian*, !opentest4j*, !objenesis, !org.eclipse.jdt.annotation*, !byte-buddy*, ;scope=compile|runtime</Embed-Dependency>
                       <Embed-Transitive>true</Embed-Transitive>
                     </instructions>
                 </configuration>
